@@ -1,5 +1,11 @@
 #include<stdio.h>
 int main(){
-    printf("Ok");
+    int num;
+    
+    scanf("%d",&num);
+    
+    printf("square of %d is %d\n",num,num*num);
+    
+    
     return 0;
 }
