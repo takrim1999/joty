@@ -1,16 +1,12 @@
 #include<stdio.h>
+#include<math.h>
 int main(){
-    char chr , word[20], string[20];
-    printf("your character?\n");
-    scanf("%c",&chr);
-    printf("Your chac is %c\n", chr);
-    printf("your word?\n");
-    scanf("%s",word);
-    printf("Your word is %s\n", word);
-    printf("your string?\n");
-    scanf(" %[^\n]",string);
-    printf("Your string is %s\n", string);
-    
+    int a,b,c,s;
+    float area;
+    scanf("%d%d%d",&a,&b,&c);
+    s = (a+b+c)/2;
+    area = sqrt(s*(s-a)*(s-b)*(s-c));
+    printf("area is %.2f\n",area);
     
     return 0;
 }
